@@ -15,6 +15,7 @@ public class Immortal extends Thread {
     private boolean paused;
 
     private boolean stop;
+    
     private AtomicInteger pauseCounter;
 
     private final List<Immortal> immortalsPopulation;

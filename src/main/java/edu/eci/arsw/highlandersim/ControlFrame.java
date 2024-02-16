@@ -91,6 +91,7 @@ public class ControlFrame extends JFrame {
         JButton btnPauseAndCheck = new JButton("Pause and check");
         btnPauseAndCheck.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
+                
                 pauseCount.set(0);
                 for (Immortal im : immortals) im.changePausedStatus();
                 while(pauseCount.get() < immortals.size()){
